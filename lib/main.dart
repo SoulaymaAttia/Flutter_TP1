@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'atelier1.dart';
+import 'atelier2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,8 +15,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         brightness: Brightness.light,
+        cardTheme: CardTheme(
+          elevation: 2,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+        ),
       ),
-      home: const ProfilePageM3(), // Nous commençons par l'atelier 1
+      home: const ProductListPageM3(), // Atelier 2
     );
   }
 }
