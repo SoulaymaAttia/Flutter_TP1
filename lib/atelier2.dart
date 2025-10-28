@@ -58,7 +58,7 @@ class ProductListPageM3 extends StatelessWidget {
                 padding: const EdgeInsets.all(12),
                 child: Row(
                   children: [
-                    // Left side - Image with badge
+                    
                     Stack(
                       children: [
                         Container(
@@ -98,7 +98,7 @@ class ProductListPageM3 extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(width: 16),
-                    // Middle - Product info
+                    
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -132,7 +132,7 @@ class ProductListPageM3 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    // Right side - Add to cart button
+                  
                     IconButton(
                       onPressed: () {
                         ScaffoldMessenger.of(context).showSnackBar(

@@ -45,7 +45,7 @@ class ProfilePageM3 extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            // Étape 1: Photo de profil avec badge
+            
             Stack(
               alignment: Alignment.bottomRight,
               children: [
@@ -87,7 +87,7 @@ class ProfilePageM3 extends StatelessWidget {
             ),
             const SizedBox(height: 24),
 
-            // Étape 2: Nom et titre
+            
             Text(
               'Mohamed Tounsi',
               style: textTheme.headline5?.copyWith(
@@ -104,7 +104,6 @@ class ProfilePageM3 extends StatelessWidget {
             ),
             const SizedBox(height: 32),
 
-            // Étape 3: Statistiques
             Wrap(
               spacing: 12,
               runSpacing: 12,
@@ -116,7 +115,7 @@ class ProfilePageM3 extends StatelessWidget {
             ),
             const SizedBox(height: 32),
 
-            // Étape 4: Section "À propos"
+           
             Card(
               elevation: 0,
               color: Colors.grey[100],
@@ -155,10 +154,10 @@ class ProfilePageM3 extends StatelessWidget {
           ],
         ),
       ),
-      // Étape 5: Bouton flottant
+
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
-          // Action de modification
+         
           debugPrint('Modification du profil');
         },
         icon: const Icon(Icons.edit),

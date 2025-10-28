@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// Product model
+
 class Product {
   final String name;
   final double price;
@@ -35,7 +35,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          // Étape 1: SliverAppBar
+         
           SliverAppBar(
             expandedHeight: 300,
             flexibleSpace: FlexibleSpaceBar(
@@ -52,7 +52,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               ),
             ],
           ),
-          // Étape 2: Contenu détaillé
+          
           SliverList(
             delegate: SliverChildListDelegate([
               Padding(
@@ -60,7 +60,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Header avec prix
+                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -80,7 +80,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       ],
                     ),
                     const SizedBox(height: 16),
-                    // Rating
+                   
                     Row(
                       children: [
                         Icon(Icons.star, color: Colors.amber, size: 20),
@@ -92,7 +92,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       ],
                     ),
                     const SizedBox(height: 24),
-                    // Description
+                  
                     Text(
                       'Description',
                       style: Theme.of(context).textTheme.subtitle1?.copyWith(
@@ -108,7 +108,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                       ),
                     ),
                     const SizedBox(height: 24),
-                    // Étape 3: Sélecteur de quantité
+                   
                     Text(
                       'Quantité',
                       style: Theme.of(context).textTheme.subtitle1?.copyWith(
@@ -152,7 +152,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         );
                       },
                     ),
-                    const SizedBox(height: 100), // Espace pour le bouton fixe
+                    const SizedBox(height: 100), 
                   ],
                 ),
               ),
@@ -160,7 +160,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
           ),
         ],
       ),
-      // Étape 4: Bouton fixe en bas
+    
       bottomNavigationBar: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
@@ -184,7 +184,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             Expanded(
               child: ElevatedButton(
                 onPressed: () {
-                  // Action d'ajout au panier
+                 
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
                       content: Text('${widget.product.name} ajouté au panier'),
@@ -204,7 +204,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
   }
 }
 
-// Example usage
+
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(
