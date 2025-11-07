@@ -215,7 +215,7 @@ void main() {
       product: Product(
         name: 'Smartphone XYZ',
         price: 599.99,
-        image: 'https://picsum.photos/500/300',
+        image: 'images/Galaxy S23.png',
         rating: 4.5,
       ),
     ),
