@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'atelier3.dart';
+import 'atelier5.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,14 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final sampleProduct = Product(
-      name: 'iPhone 15 Pro',
-      price: 999.99,
-      image: 'images/iphone15.png',
-      rating: 4.8,
-      isNew: true,
-    );
-
     return MaterialApp(
       title: 'Flutter Material 3',
       theme: ThemeData(
@@ -30,7 +22,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: ProductDetailPage(product: sampleProduct), // Atelier 3
+  home: const ProductListPageM3(), // Atelier 5
     );
   }
 }
