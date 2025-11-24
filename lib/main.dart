@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/atelier6.dart';
 import 'atelier5.dart';
+import '';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +24,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-  home: const ProductListPageM3(), // Atelier 5
+  home: //const ProductListPageM3(), // Atelier 5
+  const Atelier6Page()
     );
   }
 }
